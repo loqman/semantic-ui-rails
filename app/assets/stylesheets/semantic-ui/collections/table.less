@@ -32,8 +32,6 @@
 
   -webkit-transition: all 0.1s ease-out;
   -moz-transition: all 0.1s ease-out;
-  -o-transition: all 0.1s ease-out;
-  -ms-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
 
@@ -130,14 +128,16 @@
     display: block;
     border: none !important;
     padding: 0.25em 0.75em;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) !important;
+            box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05) !important;
   }
   .ui.table td:first-child {
     font-weight: bold;
     padding-top: 1em;
   }
   .ui.table td:last-child {
-    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
+    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
+            box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1) inset !important;
     padding-bottom: 1em;
   }
 
@@ -188,7 +188,6 @@
 .ui.table tr.positive,
 .ui.table td.positive {
   -webkit-box-shadow: 2px 0px 0px #119000 inset;
-  -moz-box-shadow: 2px 0px 0px #119000 inset;
   box-shadow: 2px 0px 0px #119000 inset;
 }
 .ui.table tr.positive td,
@@ -212,7 +211,6 @@
 .ui.table tr.negative,
 .ui.table td.negative {
   -webkit-box-shadow: 2px 0px 0px #CD2929 inset;
-  -moz-box-shadow: 2px 0px 0px #CD2929 inset;
   box-shadow: 2px 0px 0px #CD2929 inset;
 }
 .ui.table tr.negative td,
@@ -236,7 +234,6 @@
 .ui.table tr.error,
 .ui.table td.error {
   -webkit-box-shadow: 2px 0px 0px #CD2929 inset;
-  -moz-box-shadow: 2px 0px 0px #CD2929 inset;
   box-shadow: 2px 0px 0px #CD2929 inset;
 }
 .ui.table tr.error td,
@@ -261,7 +258,6 @@
 .ui.table tr.warning,
 .ui.table td.warning {
   -webkit-box-shadow: 2px 0px 0px #7D6C00 inset;
-  -moz-box-shadow: 2px 0px 0px #7D6C00 inset;
   box-shadow: 2px 0px 0px #7D6C00 inset;
 }
 .ui.table tr.warning td,
@@ -287,7 +283,6 @@
 .ui.table tr.active,
 .ui.table td.active {
   -webkit-box-shadow: 2px 0px 0px rgba(50, 50, 50, 0.9) inset;
-  -moz-box-shadow: 2px 0px 0px rgba(50, 50, 50, 0.9) inset;
   box-shadow: 2px 0px 0px rgba(50, 50, 50, 0.9) inset;
 }
 

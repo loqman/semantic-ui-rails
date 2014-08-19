@@ -27,9 +27,6 @@
 
   text-transform: uppercase;
   font-weight: normal;
-
-  -webkit-border-radius: 0.325em;
-  -moz-border-radius: 0.325em;
   border-radius: 0.325em;
 
   -webkit-box-sizing: border-box;
@@ -41,12 +38,6 @@
     background 0.1s linear
   ;
   -moz-transition:
-    background 0.1s linear
-  ;
-  -o-transition:
-    background 0.1s linear
-  ;
-  -ms-transition:
     background 0.1s linear
   ;
   transition:
@@ -72,7 +63,9 @@ a.ui.label {
   cursor: pointer;
   color: inherit;
   opacity: 0.8;
-  transition: 0.2s opacity ease;
+  -webkit-transition: 0.2s opacity ease;
+     -moz-transition: 0.2s opacity ease;
+          transition: 0.2s opacity ease;
 }
 .ui.label a:hover {
   opacity: 1;
@@ -101,12 +94,6 @@ a.ui.label {
     background 0.1s linear
   ;
   -moz-transition:
-    background 0.1s linear
-  ;
-  -o-transition:
-    background 0.1s linear
-  ;
-  -ms-transition:
     background 0.1s linear
   ;
   transition:
@@ -149,7 +136,6 @@ a.ui.label {
   text-transform: none;
 
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
 }
 .ui.image.label img {
@@ -157,9 +143,6 @@ a.ui.label {
   height: 2.25em;
   margin: -0.4em 0.8em -0.4em -0.8em;
   vertical-align: top;
-
-  -moz-border-radius: 0.325em 0em 0em 0.325em;
-  -webkit-border-radius: 0.325em 0em 0em 0.325em;
   border-radius: 0.325em 0em 0em 0.325em;
 }
 
@@ -226,9 +209,6 @@ a.ui.label:hover:before {
   margin-left: 1em;
   position: relative;
   padding: 0.33em 1.3em 0.33em 1.4em;
-
-  -webkit-border-radius: 0px 3px 3px 0px;
-  -moz-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
 }
 .ui.tag.labels .label:before,
@@ -246,18 +226,13 @@ a.ui.label:hover:before {
 
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
 
     -webkit-transition:
       background 0.1s linear
     ;
     -moz-transition:
-      background 0.1s linear
-    ;
-    -o-transition:
-      background 0.1s linear
-    ;
-    -ms-transition:
       background 0.1s linear
     ;
     transition:
@@ -279,11 +254,7 @@ a.ui.label:hover:before {
   height: 0.55em;
 
   -webkit-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.3);
-
-  -moz-border-radius: 100px 100px 100px 100px;
-  -webkit-border-radius: 100px 100px 100px 100px;
   border-radius: 100px 100px 100px 100px;
 }
 /*-------------------
@@ -295,8 +266,6 @@ a.ui.label:hover:before {
   margin: 0em 0.2em;
   left: -2rem;
   padding-left: 2rem;
-  -webkit-border-radius: 0px 4px 4px 0px;
-  -moz-border-radius: 0px 4px 4px 0px;
   border-radius: 0px 4px 4px 0px;
 
   border-color: rgba(0, 0, 0, 0.15);
@@ -333,26 +302,17 @@ a.ui.label:hover:before {
   left: 0em;
 
   padding: 0.75em 1em;
-
-  -webkit-border-radius: 4px 4px 0em 0em;
-  -moz-border-radius: 4px 4px 0em 0em;
   border-radius: 4px 4px 0em 0em;
 }
 .ui.bottom.attached.label {
   top: auto;
   bottom: 0em;
-
-  -webkit-border-radius: 0em 0em 4px 4px;
-  -moz-border-radius: 0em 0em 4px 4px;
   border-radius: 0em 0em 4px 4px;
 }
 
 .ui.top.left.attached.label {
   width: auto;
   margin-top: 0em !important;
-
-  -webkit-border-radius: 4px 0em 4px 0em;
-  -moz-border-radius: 4px 0em 4px 0em;
   border-radius: 4px 0em 4px 0em;
 }
 
@@ -360,18 +320,12 @@ a.ui.label:hover:before {
   width: auto;
   left: auto;
   right: 0em;
-
-  -webkit-border-radius: 0em 4px 0em 4px;
-  -moz-border-radius: 0em 4px 0em 4px;
   border-radius: 0em 4px 0em 4px;
 }
 .ui.bottom.left.attached.label {
   width: auto;
   top: auto;
   bottom: 0em;
-
-  -webkit-border-radius: 4px 0em 0em 4px;
-  -moz-border-radius: 4px 0em 0em 4px;
   border-radius: 4px 0em 0em 4px;
 }
 .ui.bottom.right.attached.label {
@@ -380,8 +334,6 @@ a.ui.label:hover:before {
   left: auto;
   right: 0em;
   width: auto;
-  -webkit-border-radius: 0px 4px 0px 4px;
-  -moz-border-radius: 0px 4px 0px 4px;
   border-radius: 0px 4px 0px 4px;
 }
 
@@ -405,8 +357,6 @@ a.ui.label:hover:before {
 
   -webkit-transition: color 0.2s ease;
   -moz-transition: color 0.2s ease;
-  -o-transition: color 0.2s ease;
-  -ms-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 .ui.corner.label:after {
@@ -428,8 +378,6 @@ a.ui.label:hover:before {
 
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease;
-  -o-transition: border-color 0.2s ease;
-  -ms-transition: border-color 0.2s ease;
   transition: border-color 0.2s ease;
 }
 
@@ -449,7 +397,6 @@ a.ui.label:hover:before {
 
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -500,7 +447,6 @@ a.ui.label:hover:before {
   margin: 0.5em 0em 0em -1em;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
@@ -815,9 +761,6 @@ a.ui.teal.label:hover:before {
 
   line-height: 1em;
   text-align: center;
-
-  -webkit-border-radius: 500rem;
-  -moz-border-radius: 500rem;
   border-radius: 500rem;
 }
 
@@ -843,19 +786,14 @@ a.ui.teal.label:hover:before {
 
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
   z-index: 2;
 
   -webkit-transition:
     background 0.1s linear
   ;
   -moz-transition:
-    background 0.1s linear
-  ;
-  -o-transition:
-    background 0.1s linear
-  ;
-  -ms-transition:
     background 0.1s linear
   ;
   transition:

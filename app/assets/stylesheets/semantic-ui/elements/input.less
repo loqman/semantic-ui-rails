@@ -38,27 +38,13 @@
   outline: none;
 
   color: rgba(0, 0, 0, 0.7);
-
-  -webkit-border-radius: 0.3125em;
-  -moz-border-radius: 0.3125em;
   border-radius: 0.3125em;
 
   -webkit-transition:
     background-color 0.3s ease-out,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease
-  ;
+    -webkit-box-shadow 0.2s ease,
+    border-color 0.2s ease;
   -moz-transition:
-    background-color 0.3s ease-out,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease
-  ;
-  -o-transition:
-    background-color 0.3s ease-out,
-    box-shadow 0.2s ease,
-    border-color 0.2s ease
-  ;
-  -ms-transition:
     background-color 0.3s ease-out,
     box-shadow 0.2s ease,
     border-color 0.2s ease
@@ -110,7 +96,7 @@
 ---------------------*/
 
 .ui.loading.input > .icon {
-  background: asset-url("semantic-ui/loader-mini.gif") no-repeat 50% 50%;
+  background: url(../images/loader-mini.gif) no-repeat 50% 50%;
 }
 .ui.loading.input > .icon:before,
 .ui.loading.input > .icon:after {
@@ -193,9 +179,6 @@
   padding-top: 0.82em;
 
   text-align: center;
-
-  -webkit-border-radius: 0em 0.3125em 0.3125em 0em;
-  -moz-border-radius: 0em 0.3125em 0.3125em 0em;
   border-radius: 0em 0.3125em 0.3125em 0em;
 
   -webkit-box-sizing: border-box;
@@ -205,8 +188,6 @@
 
   -webkit-transition: opacity 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out;
-  -o-transition: opacity 0.3s ease-out;
-  -ms-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
 }
 .ui.icon.input > .link.icon {
@@ -224,9 +205,6 @@
 .ui.left.icon.input > .icon {
   right: auto;
   left: 1px;
-
-  -webkit-border-radius: 0.3125em 0em 0em 0.3125em;
-  -moz-border-radius: 0.3125em 0em 0em 0.3125em;
   border-radius: 0.3125em 0em 0em 0.3125em;
 }
 .ui.left.icon.input > .circular.icon {
@@ -249,13 +227,9 @@
 
 .ui.labeled.input .corner.label {
   font-size: 0.7em;
-  -webkit-border-radius: 0 0.3125em;
-  -moz-border-radius: 0 0.3125em;
   border-radius: 0 0.3125em;
 }
 .ui.labeled.input .left.corner.label {
-  -webkit-border-radius: 0.3125em 0;
-  -moz-border-radius: 0.3125em 0;
   border-radius: 0.3125em 0;
 }
 .ui.labeled.input input {

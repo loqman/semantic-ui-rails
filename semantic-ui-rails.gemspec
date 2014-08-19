@@ -6,8 +6,8 @@ require 'semantic/ui/rails/version'
 Gem::Specification.new do |spec|
   spec.name          = "semantic-ui-rails"
   spec.version       = Semantic::Ui::Rails::VERSION
-  spec.authors       = ["nd0ut"]
-  spec.email         = ["nd0ut.me@gmail.com"]
+  spec.authors       = ["Loqman"]
+  spec.email         = ["loqmanhakimi@gmail.com"]
   spec.description   = %q{UI is the vocabulary of the web}
   spec.summary       = %q{Semantic empowers designers and developers by creating a language for sharing UI}
   spec.homepage      = ""

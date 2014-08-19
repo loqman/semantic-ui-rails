@@ -18,13 +18,12 @@
   position: relative;
   background-color: #FFFFFF;
 
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+
+          box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
 
   margin: 1em 0em;
   padding: 1em;
-
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
 
   -webkit-box-sizing: border-box;
@@ -55,15 +54,9 @@
   padding-right: 0em;
 
   background-color: transparent;
-
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 
   -webkit-box-shadow:
-    0px 1px 0px rgba(0, 0, 0, 0.1)
-  ;
-  -moz-box-shadow:
     0px 1px 0px rgba(0, 0, 0, 0.1)
   ;
   box-shadow:
@@ -80,15 +73,9 @@
   padding-bottom: 0em;
 
   background-color: transparent;
-
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 
   -webkit-box-shadow:
-    1px 0px 0px rgba(0, 0, 0, 0.1)
-  ;
-  -moz-box-shadow:
     1px 0px 0px rgba(0, 0, 0, 0.1)
   ;
   box-shadow:
@@ -116,7 +103,8 @@
 .ui.grid .ui.segment.row,
 .ui.grid .ui.segment.column {
   border-radius: 0em;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
 }
 
@@ -140,9 +128,6 @@
 .ui.piled.segment {
   margin: 2em 0em;
   -webkit-box-shadow:
-    0px 0px 1px 1px rgba(0, 0, 0, 0.15)
-  ;
-  -moz-box-shadow:
     0px 0px 1px 1px rgba(0, 0, 0, 0.15)
   ;
   -ms-box-shadow:
@@ -175,9 +160,6 @@
   -webkit-box-shadow:
     0px 0px 1px 1px rgba(0, 0, 0, 0.1)
   ;
-  -moz-box-shadow:
-    0px 0px 1px 1px rgba(0, 0, 0, 0.1)
-  ;
   box-shadow:
     0px 0px 1px 1px rgba(0, 0, 0, 0.1)
   ;
@@ -186,7 +168,6 @@
   -webkit-transform: rotate(1.2deg);
   -moz-transform: rotate(1.2deg);
   -ms-transform: rotate(1.2deg);
-  -o-transform: rotate(1.2deg);
   transform: rotate(1.2deg);
   top: 0;
   z-index: -1;
@@ -195,7 +176,6 @@
   -webkit-transform: rotate(-1.2deg);
   -moz-transform: rotate(-1.2deg);
   -ms-transform: rotate(-1.2deg);
-  -o-transform: rotate(-1.2deg);
   transform: rotate(-1.2deg);
   top: 0;
   z-index: -2;
@@ -251,7 +231,6 @@
 
 .ui.raised.segment {
   -webkit-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -280,11 +259,7 @@
   background-color: transparent;
 
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
-
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 .ui.basic.segment:first-child {
@@ -376,7 +351,10 @@
 }
 .ui.justified.segment {
   text-align: justify;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /*-------------------
@@ -399,7 +377,6 @@
 .ui.inverted.segment {
   border: none;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 .ui.inverted.segment .segment {
@@ -438,7 +415,7 @@
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
   color: #FAFAFA;
 }
@@ -447,7 +424,7 @@
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
   background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
-  background-image: -o-linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
   color: #EEEEEE;
 }
@@ -460,14 +437,9 @@
 .ui.segment.attached {
   top: -1px;
   bottom: -1px;
-
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 
   margin: 0em;
-
-  -moz-box-shadow: 0px 0px 0px 1px #DDDDDD;
   -webkit-box-shadow: 0px 0px 0px 1px #DDDDDD;
   box-shadow: 0px 0px 0px 1px #DDDDDD;
 }
@@ -478,9 +450,6 @@
 
   margin-top: 1em;
   margin-bottom: 0em;
-
-  -moz-border-radius: 5px 5px 0px 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
   border-radius: 5px 5px 0px 0px;
 }
 .ui.segment.top.attached:first-child {
@@ -493,9 +462,6 @@
 
   margin-top: 0em;
   margin-bottom: 1em;
-
-  -moz-border-radius: 0px 0px 5px 5px;
-  -webkit-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
 }
 .ui.segment.bottom.attached:last-child {

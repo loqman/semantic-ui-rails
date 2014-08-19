@@ -22,8 +22,6 @@
 }
 
 .ui.search input {
-  -webkit-border-radius: 500rem;
-  -moz-border-radius: 500rem;
   border-radius: 500rem;
 }
 
@@ -37,11 +35,8 @@
   float: right;
   margin: 0px 0px 0px -15px;
   padding: 6px 15px 7px;
-  -webkit-border-radius: 0px 15px 15px 0px;
-  -moz-border-radius: 0px 15px 15px 0px;
   border-radius: 0px 15px 15px 0px;
   -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 
@@ -65,16 +60,9 @@
   font-size: 0.875em;
   line-height: 1.2;
   color: #555555;
-
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 
   -webkit-box-shadow:
-    0px 0px 1px 1px rgba(0, 0, 0, 0.1),
-    0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset
-  ;
-  -moz-box-shadow:
     0px 0px 1px 1px rgba(0, 0, 0, 0.1),
     0px -2px 0px 0px rgba(0, 0, 0, 0.1) inset
   ;
@@ -96,8 +84,6 @@
   margin-right: 10px;
   float: left;
   overflow: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   width: 38px;
   height: 38px;
@@ -160,8 +146,6 @@
 
   -webkit-transition: background 0.2s ease-in;
   -moz-transition: background 0.2s ease-in;
-  -o-transition: background 0.2s ease-in;
-  -ms-transition: background 0.2s ease-in;
   transition: background 0.2s ease-in;
 }
 .ui.search .results .category:first-child {
@@ -217,7 +201,7 @@
 ---------------*/
 
 .ui.search.loading .input .icon {
-  background: asset-url("semantic-ui/loader-mini.gif") no-repeat 50% 50%;
+  background: url(../images/loader-mini.gif) no-repeat 50% 50%;
 }
 .ui.search.loading .input .icon:before,
 .ui.search.loading .input .icon:after {

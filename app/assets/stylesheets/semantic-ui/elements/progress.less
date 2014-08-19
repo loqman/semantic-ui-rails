@@ -22,9 +22,6 @@
 
   background-color: #FAFAFA;
   padding: 5px;
-
-  -webkit-border-radius: 0.3125em;
-  -moz-border-radius: 0.3125em;
   border-radius: 0.3125em;
 
   -webkit-box-sizing: border-box;
@@ -38,9 +35,6 @@
   height: 100%;
 
   background-color: #CCCCCC;
-
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 
   -webkit-transition:
@@ -48,14 +42,6 @@
     background-color 1s ease-out
   ;
   -moz-transition:
-    width 1s ease-in-out,
-    background-color 1s ease-out
-  ;
-  -ms-transition:
-    width 1s ease-in-out,
-    background-color 1s ease-out
-  ;
-  -o-transition:
     width 1s ease-in-out,
     background-color 1s ease-out
   ;
@@ -126,9 +112,6 @@
   right: 0px;
   bottom: 0px;
   background: #FFFFFF;
-
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 
   -webkit-animation: progress-active 2s ease-out infinite;
@@ -212,13 +195,9 @@
   height: 3px;
   padding: 0px;
   overflow: hidden;
-  -webkit-border-radius: 0em 0em 0.3125em 0.3125em;
-  -moz-border-radius: 0em 0em 0.3125em 0.3125em;
   border-radius: 0em 0em 0.3125em 0.3125em;
 }
 .ui.progress.attached .bar {
-  -webkit-border-radius: 0em;
-  -moz-border-radius: 0em;
   border-radius: 0em;
 }
 
@@ -226,13 +205,9 @@
 .ui.progress.top.attached,
 .ui.progress.top.attached .bar {
   top: -2px;
-  -webkit-border-radius: 0.3125em 0.3125em 0em 0em;
-  -moz-border-radius: 0.3125em 0.3125em 0em 0em;
   border-radius: 0.3125em 0.3125em 0em 0em;
 }
 .ui.progress.top.attached .bar {
-  -webkit-border-radius: 0em;
-  -moz-border-radius: 0em;
   border-radius: 0em;
 }
 
@@ -267,7 +242,6 @@
 
 .ui.progress.striped .bar {
   -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
   background-size: 30px 30px;
   background-image:
     -webkit-gradient(linear, left top, right bottom,
@@ -291,20 +265,8 @@
       transparent 75%, transparent
     )
   ;
-  background-image:
-    -ms-linear-gradient(
-      135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
-      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
-      transparent 75%, transparent
-    )
-  ;
-  background-image:
-    -o-linear-gradient(
-      135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
-      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
-      transparent 75%, transparent
-    )
-  ;
+  background-image: -webkit-linear-gradient(315deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(315deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
   background-image:
     linear-gradient(
       135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
@@ -318,7 +280,6 @@
   -webkit-animation: none;
   -moz-animation: none;
   -ms-animation: none;
-  -o-animation: none;
   animation: none;
 }
 .ui.progress.active.striped .bar {
